@@ -170,9 +170,9 @@ void Grafo::criaListaAdj() {
         No* no_alvo  = buscaOuCriaNo(id_no_alvo,  pesoAlvo);
 
         // Debug
-        cout << "No->getID: " << no_fonte->getId()
-                  << "  No->getPeso: " << no_fonte->getPeso()
-                  << "  Aresta->getPeso: " << aresta->getPeso() << endl;
+        //cout << "No->getID: " << no_fonte->getId()
+                  //<< "  No->getPeso: " << no_fonte->getPeso()
+                  //<< "  Aresta->getPeso: " << aresta->getPeso() << endl;
 
         no_fonte->adicionaVizinho(aresta);
         if (!in_direcionado) {
