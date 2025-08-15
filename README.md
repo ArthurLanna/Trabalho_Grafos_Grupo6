@@ -18,7 +18,7 @@ Todos os códigos foram escritos na linguagem C++, os algoritmos foram testados 
 
 ## Como rodar
 
-De preferência em um ambiente Linux, execute o comando ./execGrupo6 <nome da instância.txt>.
+De preferência em um ambiente Linux, coloque as instancias à serem testadas na pasta "Input" e execute o comando ./execGrupo6 <nome da instância.txt>.
 Em seguida escolha a opção no menu e siga as instruções na tela, a saída dos algoritmos gulosos devem ser:
 
     Minimum-Weighted Dominating Set (Algoritmo selecionado) : Melhor conjunto
