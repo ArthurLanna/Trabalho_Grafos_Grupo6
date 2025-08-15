@@ -140,8 +140,10 @@ int Guloso::calculaPesoConjunto(set<char> conjuntoDominante, Grafo* grafo){
     for(char c : conjuntoDominante){
         No* no = grafo->buscaNo(c);
         if(no){
-            cout << "Inserindo o peso do no: " << no->getId() << endl;
-            cout << "no->getPeso(): " << no->getPeso() << endl;
+            //------------------[DEBUG]--------------------
+            //cout << "Inserindo o peso do no: " << no->getId() << endl;
+            //cout << "no->getPeso(): " << no->getPeso() << endl;
+            //------------------[DEBUG]--------------------
             peso_conjunto += (grafo->verificaPonderadoVertice() ? no->getPeso() : 1);
         }
     }
