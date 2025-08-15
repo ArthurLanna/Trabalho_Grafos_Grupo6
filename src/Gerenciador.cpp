@@ -60,7 +60,7 @@ void Gerenciador::comandos(Grafo* grafo) {
         FILE* MwdsGuloso = fopen((pastaSaida + "/mwds_guloso.txt").c_str(), "w");
         FILE* MwdsGulosoRandomizado = fopen((pastaSaida + "/mwds_guloso_randomizado.txt").c_str(), "w");
         FILE* MwdsGulosoRandomizadoReativo = fopen((pastaSaida + "/mwds_guloso_randomizado_reativo.txt").c_str(), "w");
-        FILE* testes_a = fopen((pastaSaida + "/testes.txt").c_str(), "w");
+        FILE* testes_a = fopen((pastaSaida + "/resultados.txt").c_str(), "w");
         if (fecho_trans_dir != NULL) {
             fclose(fecho_trans_dir);
         }
@@ -605,8 +605,8 @@ void Gerenciador::comandos(Grafo* grafo) {
             cout << " }" << endl << "Peso do Conjunto : " << peso_conjunto_Guloso << endl;
             cout << "Tempo de execucao: " << stop << endl;
 
-            if (pergunta_imprimir_arquivo("testes.txt")) {
-                FILE *testes_a = fopen((pastaSaida + "/testes.txt").c_str(), "a");
+            if (pergunta_imprimir_arquivo("resultados.txt")) {
+                FILE *testes_a = fopen((pastaSaida + "/resultados.txt").c_str(), "a");
                 if (testes_a == NULL) {
                     printf("Erro ao abrir o arquivo para Impressão dos resultados dos testes.\n");
                 } else {
@@ -658,8 +658,8 @@ void Gerenciador::comandos(Grafo* grafo) {
             cout << " }" << endl << "Peso do conjunto : " << peso_conjunto_Reativo << endl;
             cout << "Tempo de execucao: " << stop << endl;
 
-            if(pergunta_imprimir_arquivo("testes.txt")){
-                FILE* testes_a = fopen((pastaSaida + "/testes.txt").c_str(), "a");
+            if(pergunta_imprimir_arquivo("resultados.txt")){
+                FILE* testes_a = fopen((pastaSaida + "/resultados.txt").c_str(), "a");
                 if(testes_a == NULL){
                     cout << "Erro ao abrir o arquivo para MWDS Guloso Randomizado Reativo." << endl;
                 } else {
@@ -792,8 +792,8 @@ void Gerenciador::teste_gulosoRandomizado(Grafo* grafo, double alpha){
     cout << " }" << endl << "Peso do Conjunto : " << peso_conjunto_Randomizado << endl;
     cout << "Tempo de execucao: " << stop << endl;
 
-    if(pergunta_imprimir_arquivo("testes.txt")){
-        FILE* testes_a = fopen((pastaSaida + "/testes.txt").c_str(), "a");
+    if(pergunta_imprimir_arquivo("resultados.txt")){
+        FILE* testes_a = fopen((pastaSaida + "/resultados.txt").c_str(), "a");
         if(testes_a == NULL){
             printf("Erro ao abrir o arquivo para Testes.\n");
         } else {

@@ -1,0 +1,23 @@
+MWDS (Guloso): { 4, 7, B, C, E, N, W, X, Z, e, g, l, m, n, s, x }
+Peso do conjunto : 455
+Tempo de execucao: 0.006652 
+
+MWDS (Guloso Randomizado): { 2, 7, B, E, U, X, Z, e, g, h, q, s, v, w }
+Alfa : 0.15
+Peso do conjunto : 212
+Tempo de execucao: 0.017802 
+
+MWDS (Guloso Randomizado): { 4, B, D, E, X, Z, a, e, l, n, o, q, r, x }
+Alfa : 0.50
+Peso do conjunto : 458
+Tempo de execucao: 0.019442 
+
+MWDS (Guloso Randomizado): { 2, 6, B, K, L, M, U, a, e, l, p, q, r }
+Alfa : 0.72
+Peso do conjunto : 521
+Tempo de execucao: 0.019901 
+
+MWDS (Guloso Randomizado Reativo) : { B, E, L, U, e, f, g, k, s, v, x }
+Peso do conjunto : 162
+Tempo de execucao: 1.828856 
+ 
